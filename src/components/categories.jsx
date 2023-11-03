@@ -2,12 +2,14 @@
 
 const Categories = ({ categories, filterItems }) => {
   return (
-    <div className="flex justify-center mb-20">
+    <div className="flex justify-center mb-20 underline">
       {categories.map((category, index) => {
         return (
+          
+          // Render a button for each category
           <button
             type="button"
-            className="text-xl font-semibold text-orange-400 py-2 px-3 cursor-pointer tracking-wider capitalize mx-2 rounded-lg ease-linear duration-300 hover:bg-orange-400 hover:text-white"
+            className="text-xl lg:text-2xl font-semibold text-orange-400 py-2 px-3 cursor-pointer tracking-wider capitalize mx-2 rounded-lg ease-linear duration-300 hover:bg-orange-400 hover:text-white"
             key={index}
             onClick={() => filterItems(category)}
           >
