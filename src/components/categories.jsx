@@ -2,10 +2,9 @@
 
 const Categories = ({ categories, filterItems }) => {
   return (
-    <div className="flex justify-center mb-20 underline">
+    <div className="flex justify-center mb-20">
       {categories.map((category, index) => {
         return (
-          
           // Render a button for each category
           <button
             type="button"
